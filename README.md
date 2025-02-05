@@ -1,3 +1,12 @@
+## Learning Implicit social Behavior 
+
+This repository shares code for learning social behavior demonstrations in a photo-realistic simulator setup. We drive our robot in the Habiat-Sim Simulation environment with a human walking around to collect demonstration data and have it learn the implicit rules of socially aware behavior. 
+
+The included dataset is for the door navigation scenario, where the agent learns to navigate a narrow crossing with a human walking from the other end. Our agent implicitly learns to reason about the scene geometry and the dynamic agents' observed trajectories and exhibits deadlock avoidance and yielding behavior, as seen in the demonstrated dataset. A gif of the agent working compared to other model-based baselines shows the qualitative results:
+
+![til](./app/assets/images/banner.gif)
+
+
 ## Simulator setup: 
 Code For Habitat-ROS interface with Humans walking around 
 
