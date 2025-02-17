@@ -57,4 +57,8 @@ Let's build our Docker and run the code now:
   ```docker built -t vehmedirl:ros .```
 
 2. Launch the docker using the launch_docker.sh script. If you have all the submodules clones properly it will mount them all.
-3. 
+3. Download the training dataset and weights to run from: https://drive.google.com/drive/folders/1KW0aw_sw_S307yYFsU_0Eh1KCd4hPOPR?usp=sharing
+4. Run the code to get the IRL agent path: ```python test_traj_rank_cloud.py```
+
+You should see the agents communicate over ROS and this repository sending position goal based on the IRL inference to the simulator where the agent can then navigate to it. 
+
