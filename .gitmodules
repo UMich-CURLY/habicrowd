@@ -1,0 +1,3 @@
+[submodule "IRL/medirl"]
+	path = IRL/medirl
+	url = https://github.com/UMich-CURLY/medirl.git
