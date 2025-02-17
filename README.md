@@ -41,8 +41,10 @@ Installation:
 
 ```
 
-Visualize everything in RVIZ; This will have the agents running using ORCA crossing a door. 
-   
+Visualize everything in RVIZ; This will have the agents running using ORCA crossing a door, but will not move yet, since it does not have the IRL agent running yet.
+If you want to test out giving commands to the agent using the mouse in RVIZ, set USE_IRL_AGENT = False in the play_rvo_agent.py. 
+We can also other different scenarios in the simulator. Example code to be shared soon! 
+
 ## Inverse Reinforcement Learning Setup 
 
 Get the code from the git sub-module in medirl. Let's switch to the most recent branch:
