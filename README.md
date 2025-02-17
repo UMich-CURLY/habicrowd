@@ -26,23 +26,35 @@ docker build -t sim .
 3. Launch the docker using the launch_docker.sh script. If you have all the submodules clones properly it will mount them all.
 4. Next we need to build all the packages inside the docker container:
 
-'''
+```
 ". activate habitat; cd habitat-sim; pip install -r requirements.txt; python setup.py install --bullet"
 ". activate habitat; cd habitat-lab; pip install -e habitat-lab/"
 ". activate habitat; cd habitat-lab; pip install -e habitat-baselines/"
 ". activate robostackenv; cd /home/catkin_ws; catkin_make"
-'''
+```
 
 5. To test if everything you want to run the following three in separate terminals:
-'''
+```
    ". activate habitat; python examples/play_rvo_agent.py --cfg habitat-lab/habitat/config/benchmark/multi_agent/hssd_fetch_human_social_nav_irl.yaml --disable-inverse-kinematics"
    ". activate robostackenv; roslaunch habitat_interface simple.launch"
    ". activate robostackenv; roslaunch habitat_interface map_only.launch"
 
-'''
+```
 
 Visualize everything in RVIZ; This will have the agents running using ORCA crossing a door. 
    
 ## Inverse Reinforcement Learning Setup 
 
+Get the code from the git sub-module in medirl. Let's switch to the most recent branch:
 
+```
+git checkout -b maanis
+```
+Let's build our Docker and run the code now:
+
+1. Building the docker image, call it vehmedirl:ros:
+
+  docker built -t vehmedirl:ros .
+
+2. Launch the docker using the launch_docker.sh script. If you have all the submodules clones properly it will mount them all.
+3. 
