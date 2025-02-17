@@ -21,7 +21,7 @@ Installation:
 
 2. Next we need to build the Dockerfile:
 
-docker build -t sim .
+```docker build -t sim .```
 
 3. Launch the docker using the launch_docker.sh script. If you have all the submodules clones properly it will mount them all.
 4. Next we need to build all the packages inside the docker container:
@@ -54,7 +54,7 @@ Let's build our Docker and run the code now:
 
 1. Building the docker image, call it vehmedirl:ros:
 
-  docker built -t vehmedirl:ros .
+  ```docker built -t vehmedirl:ros .```
 
 2. Launch the docker using the launch_docker.sh script. If you have all the submodules clones properly it will mount them all.
 3. 
